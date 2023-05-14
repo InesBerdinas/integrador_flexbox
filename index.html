@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="./favicon.ico" type="imagen/x icon">
+</head>
+<body>
+    <!--cabecera de la página-->
+    <header class="header">
+        <!--el div es un contenedor que indica división
+        Son contenedores muy genéricos. A diferencia de las
+        sections, que tienen una cualidad semántica y debe incluir
+        un título
+        el "div" es un elemento en bloque-->
+        
+        <div class="headerNav">
+            <div class="contenedorLogo">
+                <!--el # representa la página donde estoy parado
+                es lo mismo que haber puesto index.html-->
+                <a href="#"><img src="./assets/codoacodo.png" alt="Logo"></a>
+                <h2>Conf Bs As</h2>
+            </div>
+            <nav class="navegacion">
+                <!--lista desrodenada= ul-->
+                <ul class="listaNav">
+                    <li><a class="linksNavUno" href="#laConferencia">La Conferencia</a></li>
+                    <li><a class="linksNav" href="#losOradores">Los Oradores</a></li>
+                    <li><a class="linksNav" href="#lugarYfecha">El lugar Y La Fecha</a></li>
+                    <li><a class="linksNav" href="#convierteteEnOrador">Conviértete en Orador</a></li>
+                    <li><a class="linksNavCinco" href="./pages/comprarTickets.html">Comprar Tickets</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <section id = "laConferencia" class="laConferencia">
+            <div class="contenedorTextConf">
+                <h1>Conferencia Bs. As.</h1>
+                <p>Bs As llega por primera vez a Argentina. Un evento
+                    para compartir con nuestra comunidad el conociemiento Y
+                    experiencia de los expertos que están creando el futuro
+                    de Internet. Ven a conocer a miembros del evento, a otros
+                    estudiantes de Codo a Codo y los oradores de primer nivel
+                    que tenemos para ti. Te esperamos!
+                </p>
+                <!--si bien en el modelo de l página parecen botones,
+                como aún no está vinculado el código con JS, ponemos anclas
+                para que sean links, y luego con CSS agregamos lo estético
+                para que parezcan botones-->
+                
+                <div class="botones">
+                    <a class="botonUno" href="#convierteteEnOrador">Quiero ser Orador</a>
+                    <a class="botonDos" href="./pages/comprarTickets.html">Comprar tickets</a>
+                </div>
+              
+
+
+            </div>
+           
+        </section>
+
+    </header>
+    <!--contenido principal-->
+    <main>
+        <section id = "losOradores" class="sectionOradores">
+            <!--el span a diferencia de el div es un 
+            elemento en bloque-->
+            <h2 class="tituloOradores"><span>CONOCE A LOS</span> <br> ORADORES</h2>
+            <div class="padreCards">
+                <div class="card" id="cardUno">
+                    <img src="./assets/steve.jpg" alt="Steve Jobs">
+                    <div class="cardBody">
+                        <div class="linksCardBody">
+                            <h4 class="tituloCardBodyUno">JavaScript</h4>
+                            <h4 class="tituloCardBodyDos">React</h4>
+                        </div>
+                        <h2>Steve Jobs</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit 
+                            officiis velit repudiandae accusantium quo 
+                            delectus dicta vel nam ad tempore temporibus dolorum dolore eaque 
+                            vitae ducimus exercitationem in, iusto recusandae?
+                            Lorem ipsum dolor
+                            sit amet consectetur adipisicing elit. 
+                            Magnam, dolor voluptatem illum voluptate error 
+                            autem repellat, ut vero numquam quasi deleniti rem officia 
+                            quo ea eaque officiis ab minus dolore!
+                        </p>
+
+                    </div> 
+                    
+                </div>
+                <div class="card">
+                    <img src="./assets/bill.jpg" alt="Bill Gates"> 
+                    <div class="cardBody">
+                        <div class="linksCardBody">
+                            <h4 class="tituloCardBodyUno">JavaScript</h4>
+                            <h4 class="tituloCardBodyDos">React</h4>
+                        </div>
+                        <h2>Bill Gates</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit 
+                            officiis velit repudiandae accusantium quo 
+                            delectus dicta vel nam ad tempore temporibus dolorum dolore eaque 
+                            vitae ducimus exercitationem in, iusto recusandae?
+                            Lorem ipsum dolor
+                            sit amet consectetur adipisicing elit. 
+                            Magnam, dolor voluptatem illum voluptate error 
+                            autem repellat, ut vero numquam quasi deleniti rem officia 
+                            quo ea eaque officiis ab minus dolore!
+                        </p>
+                    </div>
+                    
+                </div>
+                <div class="card">
+                    <img src="./assets/ada.jpeg" alt="Ada Lovelace"> 
+                    <div class="cardBody">
+                        <div class="linksCardBody">
+                            <h4 class="tituloCardBodyTres">Negocios</h4>
+                            <h4 class="tituloCardBodyCuatro">Startups</h4>
+
+                        </div>
+                        
+                        <h2>Ada Lovelace</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit 
+                            officiis velit repudiandae accusantium quo 
+                            delectus dicta vel nam ad tempore temporibus dolorum dolore eaque 
+                            vitae ducimus exercitationem in, iusto recusandae?
+                            Lorem ipsum dolor
+                            sit amet consectetur adipisicing elit. 
+                            Magnam, dolor voluptatem illum voluptate error 
+                            autem repellat, ut vero numquam quasi deleniti rem officia 
+                            quo ea eaque officiis ab minus dolore!
+                        </p>
+                    </div>
+                   
+                </div>
+
+            </div>
+            
+        </section>
+
+        <section id = "lugarYfecha" class="LugarFecha">
+            <div class="left">
+              
+            </div>
+               
+            <div class="right">
+                <h2>Bs As - Octubre</h2>
+                <p>Buenos Aires es la provincia y localidad más grande
+                    del estado de Argentina, en los Estados Unidos. Honolulu
+                    es la más sureña de entre las principales ciudades estadounidenses.
+                    Aunque el nombre de Honolulu se refiere al área urbana en la costa 
+                    sureste de la isla Uahu, la ciudad y el condado de Honolulu han
+                    formado una ciudad-condado consolidada que cubre toda la ciudad(aproximadamente
+                    600km2 de superficie)
+                </p>
+                <a href="">Conocé más</a>
+            </div>
+            
+        </section>
+
+        <section id = "convierteteEnOrador" class="sectionConvierteteEnOrador">
+            <h2><span>CONVIÉRTETE EN UN</span> <br>ORADOR</h2>
+            <P>Anótate como orador para dar una charla ignite.
+                Cuéntanos de qué quieres hablar!
+            </P>
+            <form action="" autocomplete="on">
+                <div class="datosPersonales">
+                    <div class="datosPersonalesCelular">
+                        <input type="text" placeholder="Nombre" required>
+                        <input type="text" placeholder="Apellido" required>
+                    </div>
+                    
+                </div>
+                <div class="completarTexto">
+                    <textarea class="texto" cols="44" rows="10" placeholder="Sobre qué quieres hablar?" required></textarea>
+                    
+                </div>
+                <p>Recuerda incluir un título para tu charla</p>
+                <div class="enviar">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+            
+        </section>
+
+    </main>
+    <!--pie de página-->
+    <footer>
+        <div class="linksFooter">
+            <a href="">Preguntas frecuentes</a>
+            <a href="">Contáctanos</a>
+            <a href="">Prensa</a>
+            <a href="">Conferencia</a>
+            <a href="">Términos y Condiciones</a>
+            <a href="">Privacidad</a>
+            <a href="">Estudiantes</a>
+        </div>
+
+    </footer>
+    
+</body>
+</html>

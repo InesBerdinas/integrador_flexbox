@@ -1,0 +1,511 @@
+
+/*ESCRITORIO PRIMERO 1400 o mayor*/
+
+@import url(../assets/font/Alkatra\,Nunito.zip);
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.header{
+    height: 100vh;
+}
+
+.headerNav{
+    height: 15%;
+    background-color: rgb(53, 58, 64);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+}
+
+
+
+.contenedorLogo{
+    width: 20%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contenedorLogo a{
+    display: inline-block;
+    width: 38%;
+}
+
+.contenedorLogo h2{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 400;
+   
+}
+
+.contenedorLogo img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.navegacion{
+    
+    display: flex;
+    align-items: center;
+}
+
+.listaNav{
+    display: flex;
+    list-style: none;
+}
+
+.linksNav{
+    color: rgb(88, 85, 85);
+    text-decoration: none;
+    padding-right: 1rem;
+    font-size: 1.2rem;
+}
+
+.linksNavUno{
+    color: white;
+    text-decoration: none;
+    padding-right: 1rem;
+    font-size: 1.2rem;
+}
+
+.linksNavCinco{
+    color: green;
+    text-decoration: none;
+    padding-right: 1rem;
+    font-size: 1.2rem;
+}
+
+
+/*sección la conferencia - hermano de headerNav*/
+.laConferencia{
+    height: 85%;
+    background: linear-gradient(to bottom, #00000026,  #000000c2, #00000026), url("../assets/ba1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-right: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.contenedorTextConf{
+    width: 40%;
+    color: white;
+    text-align: right;
+}
+
+.contenedorTextConf h1{
+    margin-bottom: 1rem;
+}
+
+.contenedorTextConf p{
+    margin-bottom: 1rem;
+    line-height: 1.5rem;
+}
+
+.botonUno{
+    text-decoration: none;
+    color: white;
+    margin-left: 1.3vh;
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 0.5px;
+    border-color: white;
+    border-radius: 3px;
+    border-style: solid;
+    padding-left:15px ;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.botonDos{
+
+    text-decoration: none;
+    color: white;
+    margin-left: 1.3vh;
+    background-color: green;
+    border-width: 0.5px;
+    border-color: rgba(255, 255, 255, 0);
+    border-radius: 3px;
+    border-style: solid;
+    padding-left:15px ;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+/*sección Oradores*/
+
+
+.tituloOradores{
+    text-align: center;
+    padding-top: 3vh;
+}
+
+.padreCards{
+    width: 100%;
+    height: 50%;
+    padding: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  
+}
+
+.card{
+    border: 1px solid rgb(80, 78, 78);
+    margin-left: 15px; 
+    margin-right: 15px;
+    border-radius: 5px;
+    text-align: left;
+    
+}
+
+.card img{
+    height: 55%;
+    width: 100%; 
+    object-fit: cover; 
+}
+
+.cardBody{
+    width: 100%;
+    padding: 15px;
+    line-height: 1.5rem;
+}
+
+.cardBody h2{
+    margin-top: 1vh;
+    margin-left: 1.1vh;
+}
+
+.cardBody p{
+    margin-left: 1.1vh;
+}
+.linksCardBody{
+    display: flex;
+    align-items: left;
+    
+}
+
+.tituloCardBodyUno{
+    
+    margin-right: 0.5px;
+    color: black;
+    margin-left: 1.3vh;
+    background-color: goldenrod;
+    border-width: 5px;
+    border-color: rgba(255, 255, 255, 0);
+    border-radius: 3px;
+    border-style: solid;
+    padding-left:3px ;
+    padding-right: 3px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.tituloCardBodyDos{
+    color: white;
+    margin-left: 1.3vh;
+    background-color: darkcyan;
+    border-width: 5px;
+    border-color: rgba(255, 255, 255, 0);
+    border-radius: 3px;
+    border-style: solid;
+    padding-left:3px ;
+    padding-right: 3px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.tituloCardBodyTres{
+    margin-right: 0.5px;
+    color: white;
+    margin-left: 1.3vh;
+    background-color: dimgrey;
+    border-width: 5px;
+    border-color: rgba(255, 255, 255, 0);
+    border-radius: 3px;
+    border-style: solid;
+    padding-left:3px ;
+    padding-right: 3px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.tituloCardBodyCuatro{
+    color: white;
+    margin-left: 1.3vh;
+    background-color: firebrick;
+    border-width: 5px;
+    border-color: rgba(255, 255, 255, 0);
+    border-radius: 3px;
+    border-style: solid;
+    padding-left:3px ;
+    padding-right: 3px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+/*sección lugar y fecha*/
+.LugarFecha{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.left{
+    width: 50%;
+    background-image: url("../assets/honolulu.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.right{
+    width: 50%;
+    background-color: rgb(30, 28, 28);
+    color: white;
+    margin-left: 0.3vh;
+}
+
+.right h2{
+    margin-top: 2vh;
+    margin-left: 1.7vh;
+}
+.right p{
+    margin-top: 2vh;
+    margin-left: 1.3vh;
+    margin-bottom: 3.5vh;
+    line-height: 1.5rem;
+}
+
+.right a{
+    text-decoration: none;
+    color: white;
+    margin-left: 1.3vh;
+    border-width: 1px;
+    border-color: white;
+    border-radius: 3px;
+    border-style: solid;
+    padding-left:15px ;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+/*Conviertéte en un Orador*/
+.sectionConvierteteEnOrador h2{
+    text-align: center;
+    padding-top: 3vh;
+    padding-bottom: 2vh;
+}
+
+.sectionConvierteteEnOrador p{
+    text-align: center;
+}
+
+/*Cuestionario*/
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.datosPersonales input{
+    height: 4vh;
+    width: 50vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    margin-left: 10px;
+   
+}
+
+.completarTexto textarea{
+    width: 104vh;
+}
+
+.enviar input{
+    width: 104vh;
+    color: white;
+    margin-top: 1vh;
+    margin-left: 1.3vh;
+    background-color: yellowgreen;
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0);
+    border-radius: 3px;
+    border-style: none;
+    padding-left:15px ;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+/*FOOTER*/
+
+footer{
+    height: 10vh;
+    background: linear-gradient(to right, #1c3643, #1e5372);
+    margin-top: 3vh;
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    margin-left: 12vh;
+    align-items: center;
+}
+
+
+
+/*DISEÑO PARA CELULAR 
+recordar valor inicial: 568*/
+
+@media screen and (max-width: 768px){
+
+    /*Encabezado*/
+    .headerNav{
+        height: 30%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .contenedorLogo{
+        width: 50%;
+    }
+
+    .listaNav{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+  
+    /*Sección la Conferencia*/
+
+    .botones{
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    /*Sección Oradores*/
+
+    .tituloOradores{
+        /*padding-top: 15vh;*/
+        margin-top: 13vh;
+    }
+
+    .padreCards{
+        flex-direction: column;
+        align-content: space-around;
+        width: 80%;
+        height: 50%;
+        margin-left: 11vh;
+    }
+
+    .card{
+        margin-bottom: 2vh;
+    }
+
+    .LugarFecha{
+        height: 80vh;
+    }
+
+    .left{
+        
+        margin-left: 1vh;
+    }
+
+    .right{
+        margin-right: 1vh;
+    }
+
+    /*Sección Formulario*/
+
+    .datosPersonalesCelular{
+        display: flex;
+        flex-direction: row;
+        width: 87vh;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .completarTexto textarea{
+        width: 85vh;
+    }
+
+    .enviar input{
+        width: 85vh;
+        margin-top: 1vh;
+        
+    }
+
+    /*Footer*/
+
+    footer{
+        height: 50vh;
+        justify-content: center;
+        
+    }
+
+    .linksFooter{
+        display: flex;
+        flex-direction: column; 
+    }
+    
+    footer a{
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+
+   
+    
+
+
+
+
+}
+
+/*DISEÑO TABLET*/
+
+@media screen and (min-width: 769px) and (max-width: 1400px){
+    
+}
+
+
+
+/*
+@media screen and (min-width: 568px) and (max-width: 767px){
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1399px){
+    
+}
+/*
+
+/*otra opción*/
