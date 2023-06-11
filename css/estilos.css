@@ -373,6 +373,137 @@ footer a{
     align-items: center;
 }
 
+/*PÁGINA COMPRAR TICKETS*/
+
+
+.tipoCupones{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.tipoCuponesUno{
+    width:34vh;
+    height: 34vh;
+    border: 2px solid blue;
+    margin-right: 1vh;
+
+    
+}
+
+.tipoCuponesDos{
+    width:34vh;
+    height: 34vh;
+    border: 2px solid lightblue;
+    margin-right: 1vh;
+  
+}
+
+.tipoCuponesTres{
+    width:34vh;
+    height: 34vh;
+    border: 2px solid yellow;
+    margin-right: 1vh;
+  
+}
+
+.tipoCupones h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.tipoCupones p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.ventaTickets p{
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 7px;
+}
+
+.ventaTickets h1{
+    text-align: center;
+}
+
+.correoElectronico input{
+    height: 4vh;
+    width: 105vh;
+}
+
+.titulos{
+    display: flex;
+    justify-content: space-evenly;
+}
+.cantidadYcategoria{
+   display: flex;
+   justify-content: center;
+   width: 105vh;
+   margin-top: 15px;
+
+}
+
+.cantidad input{
+    width: 50vh;
+    height: 4vh;
+}
+
+.cantidadYcategoria select{
+    width: 53vh;
+    height: 4vh;
+    margin-left: 30px;
+}
+
+.totalApagar{
+    background-color: lightblue;
+    width: 105vh;
+    display: flex;
+    justify-content: start;
+    margin-top: 15px;
+    height: 5vh;
+    align-items: center;
+}
+
+.botonesPagar{
+    display: flex;
+    width: 105vh;
+    justify-content: center;
+}
+
+.borrar{
+    width:53vh;
+    height:5vh;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.borrar input{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(101, 215, 101);
+    color: white;
+}
+
+.resumen{
+    width: 53vh;
+    height: 5vh;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.resumen button{
+    
+    width: 100%;
+    height: 100%;
+    background-color: rgb(101, 215, 101);
+    color: white;
+}
 
 
 /*DISEÑO PARA CELULAR 
