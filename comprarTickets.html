@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    
+</head>
+<body>
+    <!--cabecera de la página-->
+    <header class="header">
+        <!--el div es un contenedor que indica división
+        Son contenedores muy genéricos. A diferencia de las
+        sections, que tienen una cualidad semántica y debe incluir
+        un título
+        el "div" es un elemento en bloque-->
+
+        <div class="headerNav">
+            <div class="contenedorLogo">
+                <!--el # representa la página donde estoy parado
+                es lo mismo que haber puesto index.html-->
+
+                <h2>Conf. Bs As</h2>
+            </div>
+            <nav class="navegacion">
+                <!--lista desrodenada= ul-->
+                <ul class="listaNav">
+                    <!--Es doble punto porque es un enlace externo hacia otra página-->
+                    <li><a class="linksNavUno" href="../index.html#laConferencia">La Conferencia</a></li>
+                    <li><a class="linksNav" href="../index.html#losOradores">Los Oradores</a></li>
+                    <li><a class="linksNav" href="../index.html#losOradores">Lugar Y La Fecha</a></li>
+                    <li><a class="linksNav" href="../index.html#convierteteEnOrador">Conviértete en Orador</a></li>
+                    <li><a class="linksNavCinco" href="#">Comprar Tickets</a></li>
+                </ul>
+            </nav>
+
+
+        </div>
+        
+
+    <main>
+        <sectio class="cupones">
+            <div class="tipoCupones">
+                <div class="tipoCuponesUno">
+                    <h3>Estudiante</h3>
+                    <p>Tienen un descuento <br>80% <br>*presentar documetación</p>
+    
+                </div>
+                <div class="tipoCuponesDos">
+                    <h3>Trainee</h3>
+                    
+                    <p>Tienen un descuento <br>50% <br>*presentar documetación</p>
+                </div>
+                <div class="tipoCuponesTres">
+                    <h3>Junior</h3>
+                   
+                    <p>Tienen un descuento <br>15% <br>*presentar documetación</p>
+                </div>
+
+            </div>
+           
+            
+            
+        </sectio>
+        <section class="ventaTickets">
+            <p>VENTA</p>
+            <h1>VALOR DE TICKET $200</h1>
+
+            <form action="" autocomplete="on">
+                <div class="datosPersonales">
+                    <input type="text" class="form-control" id="name" placeholder="Nombre" required>
+                    <input type="text" class="form-control" id="apellido" placeholder="Apellido" required>
+
+                </div>
+                <div class="correoElectronico">
+                    <input type="email" class="form-control" id="mail" placeholder="Correo" required>
+                </div>
+
+                <div class="titulos">
+
+                    <div>
+                        <h3>Cantidad</h3>
+
+                    </div>
+                    <div>
+                        <h3>Categoría</h3>
+
+                    </div>
+                    
+                </div>
+                
+
+                <div class="cantidadYcategoria">
+                    
+                    <div class="cantidad">
+                        <input type="number" class="form-select" id="cantidad" placeholder="Cantidad" required>
+                    </div>
+                    <select name="menu" id="categoria" class="form-select">
+                    
+                        <option value="0">Estudiante</option>
+                        <option value="1">Trainee</option>
+                        <option value="2">Junior</option>
+                    </select>
+                </div>
+
+                <div class="totalApagar">
+                    <p>Total a pagar: $
+                        <span id="totalPago"></span>
+                    </p>
+
+                </div class="formularioTerminado">
+
+                <div class="botonesPagar">
+                    <div class="borrar">
+                        <button type="reset" id="btnBorrar">Borrar</button>
+                    </div>
+    
+                    <div class="resumen">
+                        <!--<input type="button" value="Resumen">-->
+                        <button type="button" id="btnResumen">Resumen</button>
+    
+                    </div>
+
+                </div>
+
+               
+
+                </div>
+            </form>
+           
+
+        </section>
+
+    </main>
+      
+
+    </header>
+
+    <!--pie de página-->
+    <footer>
+        <div class="linksFooter">
+            <a href="">Preguntas frecuentes</a>
+            <a href="">Contáctanos</a>
+            <a href="">Prensa</a>
+            <a href="">Conferencia</a>
+            <a href="">Términos y Condiciones</a>
+            <a href="">Privacidad</a>
+            <a href="">Estudiantes</a>
+        </div>
+
+    </footer>
+    <script  src="../js/codigo.js"></script>
+</body>
+</html>
